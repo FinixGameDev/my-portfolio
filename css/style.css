@@ -1,5 +1,9 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     background: #ff4c00;
     background: radial-gradient(circle, #ff4c00 0%, #b51a12 42%, #750000 100%);
@@ -15,9 +19,11 @@ body{
 
 header{
     background-color: white;
-    border: 10px dashed;
-    border-color: black;
+    padding: 2rem;
+    color:black;
+    border-bottom: 3px #000 solid;
 }
+
 
 main{
     display: block;
@@ -32,4 +38,19 @@ footer{
 
 #hero{
     display: grid;
+    padding: 3%;
+    border: 15px;
+    border-style: solid;
+    border-color: black;
 }
+
+.speech {
+    background-color:#fff;
+    border:solid 2px #000;
+    border-radius:12px;
+    display:inline-block;
+    margin:.5em;
+    padding:.5em 1em;
+    position:relative;
+    color: #000;
+  }
