@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap');
 @font-face {
     font-family: 'Newspaper-Cutout';
-    src: url('../fonts/NewspaperCutoutWhiteOnBlac-Rg.ttf');
+    src: url('../../fonts/NewspaperCutoutWhiteOnBlac-Rg.ttf') format('truetype');
 }
 
 *{
