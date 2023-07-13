@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap');
+@font-face {
+    font-family: 'Newspaper-Cutout';
+    src: url('/fonts/NewspaperCutoutWhiteOnBlac-Rg.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,50 +13,179 @@
 html{
     background: #ff4c00;
     background: radial-gradient(circle, #ff4c00 0%, #b51a12 42%, #750000 100%);
-    color: rgb(255, 187, 0);
-    font-family: Arial;
+    color: black;
+    font-family:'East Sea Dokdo', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+    border: white 0.25rem solid;
 }
-
 body{
-    padding: 0;
-    margin: 0;
-    border: 0;
+    border: black 0.25rem solid;
+    width: 100%;
 }
 
 header{
     background-color: white;
-    padding: 2rem;
-    color:black;
-    border-bottom: 3px #000 solid;
+    align-self: center;
+    width: inherit;
+    position: sticky;
+    top: 0;
+}
+
+.header-selector{
+    list-style-type: none;
+    list-style-image: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    border-bottom: black 0.25rem solid;
+    border-top: black 0.25rem solid;
+}
+
+.header-item{
+    font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    width: fit-content;
+    color: #000;
+    padding: 0.5rem;
+    border-right: black 0.25rem solid;
+}
+
+.header-logo{
+   width: 10%;
+   align-items: center;
+   border-right: black 0.25rem solid;
+   border-bottom: black 0.25rem solid;
 }
 
 
+.header-dropdown{
+    display: none;
+
+}
+
 main{
-    display: block;
-    padding: 5%;
+    display: inline-block;
+    padding: 2%;
+    width: 100%;
+    align-items: center;
 }
 
 footer{
     background-color: rgb(28, 28, 28);
     color: #750000;
-    padding: 1%;
+    width: 100%;
+    border-top: 5px #750000 solid;
 }
 
-#hero{
-    display: grid;
-    padding: 3%;
-    border: 15px;
-    border-style: solid;
-    border-color: black;
-}
-
-.speech {
-    background-color:#fff;
-    border:solid 2px #000;
-    border-radius:12px;
-    display:inline-block;
-    margin:.5em;
-    padding:.5em 1em;
-    position:relative;
+a{
+    text-decoration: none;
+    cursor: pointer;
     color: #000;
-  }
+}
+
+a:hover, a:focus{
+    color: grey;
+}
+
+
+
+
+#project-list{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+.project-view{
+    display: flex;
+
+    width: inherit;
+
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 5px black;
+
+    background-color: white;
+    border: black 5px solid;
+}
+
+.project-view:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.image-container{
+    border: black 5px solid;
+    padding: 0.5rem;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+
+    display: block;
+    border: black 5px solid;
+
+    box-shadow: 5px 5px 5px black;
+}
+
+.project-info{
+    padding: 1rem;
+    border: black 5px solid;
+    max-width: 68%;
+}
+
+.project-title{
+    display: block;
+    font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.project-description{
+    margin: 1rem;
+    text-align: justify;
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    align-items: center;
+    list-style: none;
+    width: fit-content;
+
+    font-family: 'Permanent Marker', cursive;
+    font-size: small;
+}
+
+.project-link{
+    width: 200px;
+    height: 75px;
+    flex: 1 1 100px;
+
+    align-items: center;
+
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 100px;
+}
+
+.project-link a{
+    margin: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 10px;
+    gap: 0.5rem;
+
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}

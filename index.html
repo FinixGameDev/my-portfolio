@@ -13,22 +13,22 @@
     <!--Main Selector-->
     <header>
       <nav aria-label="selector">
-        <ul>
-            <li>
-                <a href="index.html"><img src="imgs/BasicMask.png" alt="icon" width="16" height="16"></a>
+        <ul class="header-selector">
+              <li class="header-item">
+                <a href="home.html">Home</a>
               </li>
-              <li>
+              <li class="header-item">
                 <a href="projects.html">Projects</a>
-                <ul>
+                <ul class="header-dropdown">
                   <li>Games</li>
                   <li>Tools</li>
                   <li>Videos</li>
                 </ul>
               </li>
-              <li>
+              <li class="header-item">
                 <a href="about.html">About</a>
               </li>
-              <li>
+              <li class="header-item">
                 <a href="#end">Contact</a>
               </li>
         </ul> 
@@ -36,37 +36,11 @@
     </header>
 
 
-    <main>
-      <!--Home Section-->
-
-      <section id="hero">
-        <h2>Hello there</h2>
-        <img src="imgs/BasicMask.png" alt="icon" width="500" height="500" loading="lazy"/>
-        <p class="speech">
-          I'm Finix! I'm a new game developer and here you can find all
-          of my Portfolio. This includes games, game development tools,
-          documentation and devlogs. Learn more about me
-          <a href="about.html">here</a>.
-        </p>
-      </section>
-      
-      <hr/>
-
-      <section id="showcase">
-        <h2>Want to take a look?</h2>
-
-        <p>My <a href="projects.html">projects</a> are cool</p>
-      </section>
-
-      <hr/>
-    </main>
-
-
 
     <footer>
     
         <section id="end">
-            <h2>Contact Form</h2>
+          <h2>Contact Form</h2>
             <form action="https://httpbin.org/get" method="get">
                 <fieldset>
                     <p>
@@ -93,46 +67,23 @@
                     <br>
                     <button>Submit</button>
                 </fieldset>          
-            </form>
+              </form>
       
 
-            <h2>Links</h2>
-            <nav aria-label="sitemap">
-              <ul>
-                  <li>
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                      <a href="projects.html">Projects</a>
-                      <ul>
-                        <li>Games</li>
-                        <li>Tools</li>
-                        <li>Videos</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about.html">About</a>
-                    </li>
-                    <li>
-                      <a href="#end">Contact</a>
-                    </li>
-              </ul> 
-            </nav>
-        </section>
-      
+          <h2>Follow Me</h2>
+          <p>Here's my social media:</p>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA">Youtube</a>
+            </li>
+            <li>
+              <a href="https://github.com/FinixGameDev">GitHub</a>
+            </li>
+          </ul>
 
-      <h2>Follow Me</h2>
-      <p>Here's my social media:</p>
-      <ul>
-        <li>
-          <a href="https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA">Youtube</a>
-        </li>
-        <li>
-            <a href="https://github.com/FinixGameDev">GitHub</a>
-        </li>
-    </ul>
+      <p>&copy; 2023 Finix</p>
 
-      <p>&copy;Finix</p>
+      </section>
     </footer>
   </body>
 </html>
