@@ -59,6 +59,7 @@ html{
 body{
     background: var(--LIGHTRED);
     background: radial-gradient(circle, var(--LIGHTRED) 0%, var(--MIDRED) 42%, var(--DARKRED) 100%);
+    align-items: center;
 
     color: black;
     font-family:'East Sea Dokdo', cursive;
@@ -83,6 +84,7 @@ main{
     min-height: 100vh;
     display: grid;
     justify-content: center;
+    max-width: 1300px;
 }
 
 main h1{
