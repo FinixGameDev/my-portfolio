@@ -82,6 +82,7 @@ main{
     width: 100%;
     min-height: 100vh;
     display: grid;
+    justify-content: center;
 }
 
 main h1{
@@ -119,6 +120,7 @@ a{
 
 a:hover, a:focus{
     color: grey;
+    transition: ease-in-out .4s;
 }
 
 .speech{
@@ -144,6 +146,7 @@ a:hover, a:focus{
 
 .speech a:hover, .speech a:focus{
     color: gray;
+    transition:  ease-in-out .4s;
 }
 
 .nowrap{
@@ -203,6 +206,8 @@ header{
     color: #000;
     padding: 0.5rem;
     border-right: black 0.25rem solid;
+
+    transform: skewX(-3deg);
 }
 
 .header-item:nth-child(1){
@@ -337,13 +342,14 @@ footer h2{
 .project-title{
     display: block;
     font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
+    font-size: max(50px, 5vh);
     margin-bottom: 1rem;
 }
 
 .project-description{
     margin: 1rem;
     text-align: justify;
+    font-size: max(2vh, 1.5rem);
 }
 
 .project-description ul{
@@ -379,6 +385,7 @@ footer h2{
 
 .project-link:hover{
     background-color: gray;
+    transition:  ease-in-out .4s;
 }
 
 .project-link a{
@@ -442,11 +449,208 @@ footer h2{
 }
 
 .video-title{
-    font-size: 2rem;
+    font-size: max(2rem ,4vh);
     font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .video-description{
-    font-size: 1.5rem;
+    font-size: max(1rem ,2vh);
     text-align: justify;
 }
+
+.video-description a{
+    background: black;
+    color: white;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 50%;
+}
+
+/*ABOUT STYLING*/
+.about-entry{
+
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.about-entry::after{
+    content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 5px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about-entry h2{
+    margin: 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+#about{
+    align-self: center;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.about-skills{
+    display: flex;
+    align-items: flex-center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.skill-list{
+    margin: 3rem;
+    list-style: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-list li{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10%;
+    width: fit-content;
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.25rem;
+}
+
+.about-skills h3{
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 0.5rem;
+    font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;;
+    width: fit-content;
+}
+
+.about-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    list-style: none;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .about-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  /* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: 5px solid black;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+
+  .about-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .about-content{
+    justify-self: center;
+  }
+  
+  .about-languages .about-content{
+    margin: 1rem;
+    width: fit-content;
+    padding: .5rem;
+  }
+
+  .title h3{
+    border-bottom: black dotted 2px;
+  }
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+    
+    /* Full-width containers */
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+    
+    /* Make sure that all arrows are pointing leftwards */
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 15px;
+      }
+    
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
+  
