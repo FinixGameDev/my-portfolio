@@ -13,30 +13,75 @@
     box-sizing: border-box;
 }
 
+img{
+    display: block;
+}
+
+/*VARIABLES*/
+:root{
+    /*COLOR*/
+    --LIGHTRED: #ff4c00;
+    --MIDRED: #b51a12;
+    --DARKRED: #750000;
+}
+
+/*SCREEN OVERRIDES*/
+
+/*SMALL*/
+@media screen and (min-width: 576px){
+   
+    
+}
+
+/*MEDIUM*/
+@media screen and (min-width: 768px){
+    
+}
+
+
+/*LARGE*/
+@media screen  and (min-width: 992px){
+}
+
+/*XL*/
+@media screen and (min-width: 1200px){
+    
+}
+
+
 /*GENERAL STYLING*/
 
 html{
-    background: #ff4c00;
-    background: radial-gradient(circle, #ff4c00 0%, #b51a12 42%, #750000 100%);
-    color: black;
-    font-family:'East Sea Dokdo', cursive;
-    font-size: 30px;
-    font-weight: 700;
-    width: 100%;
     border: white 0.25rem solid;
-}
-body{
-    border-right: black 0.25rem solid;
-    border-left: black 0.25rem solid;
-    border-bottom: black 0.25rem solid;
     width: 100%;
 }
 
+body{
+    background: var(--LIGHTRED);
+    background: radial-gradient(circle, var(--LIGHTRED) 0%, var(--MIDRED) 42%, var(--DARKRED) 100%);
+
+    color: black;
+    font-family:'East Sea Dokdo', cursive;
+    font-weight: 700;
+    font-size: 25px;
+
+
+    border-right: black 0.25rem solid;
+    border-left: black 0.25rem solid;
+    border-bottom: black 0.25rem solid;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
 main{
-    display: block;
     padding: 2%;
     width: 100%;
-    align-items: center;
+    min-height: 100vh;
+    display: grid;
 }
 
 main h1{
@@ -55,69 +100,71 @@ main h1{
 main h2{
     text-align: center;
     font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-size: 45px;
     background-color: white;
     border: black 5px solid;
     box-shadow: 5px 5px 5px black;
     width: fit-content;
     margin: 1.5rem;
     padding: 5px;
+
+    justify-self: center;
 }
 
 a{
     text-decoration: none;
     cursor: pointer;
-    color: #000;
+    color: black;
 }
 
 a:hover, a:focus{
     color: grey;
 }
 
-
-/*FOOTER STYLING*/
-
-footer{
-    background-color: rgb(28, 28, 28);
-    color: #750000;
-    width: 100%;
-    border-top: 5px #750000 solid;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: large;
-}
-
-footer h2{
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-weight: 200;
-    font-size: larger;
-}
-
-.footer-copyright{
-    font-family:'East Sea Dokdo', cursive;
-    color: white;
-    font-size: medium;
-}
-
-.footer-contact{
-    width: fit-content;
-    height: inherit;
-}
-
-.footer-social{
-    width: fit-content;
-    height: inherit;
-}
-
-#footer-info{
+.speech{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 2rem;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    background-color: white;
+    border: black 5px solid;
+    border-radius: 3rem;
+
+    height: fit-content;
 }
 
-/*HEADER STYLING*/
+.speech a{
+    background: black;
+    color: white;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 50%;
+}
+
+.speech a:hover, .speech a:focus{
+    color: gray;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.image-container{
+    border: black 5px solid;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+
+    border: black 5px solid;
+
+    box-shadow: 5px 5px 5px black;
+}
+/*Header STYLING*/
 
 header{
     background-color: white;
@@ -129,6 +176,7 @@ header{
     top: 0;
 }
 
+
 .header-selector{
     list-style-type: none;
     list-style-image: none;
@@ -136,6 +184,10 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow: hidden;
+
+    justify-content: center;
+
 
 
     border-bottom: black 0.25rem solid;
@@ -153,35 +205,110 @@ header{
     border-right: black 0.25rem solid;
 }
 
+.header-item:nth-child(1){
+    border-left: #000 0.25rem solid;
+}
+
 
 .header-dropdown{
     display: none;
 
 }
 
-.image-container{
-    border: black 5px solid;
-    padding: 0.5rem;
+/*FOOTER STYLING*/
+
+footer{
+    background-color: rgb(28, 28, 28);
+    color: var(--DARKRED);
+    width: 100%;
+    border-top: 5px var(--DARKRED) solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: large;
 }
 
-.image-container img{
-    width: 100%;
-    height: auto;
+footer h2{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    font-size: larger;
+}
 
-    display: block;
-    border: black 5px solid;
+.footer-copyright{
+    font-family:'East Sea Dokdo', cursive;
+    color: white;
+    font-size: medium;
+}
 
+.footer-social{
+    width: fit-content;
+    height: inherit;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-icons{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: fit-content;
+    width: auto;
+}
+
+.footer-icons li {
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+#footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+/*HERO STYLING*/
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    flex-shrink: 1 1 1000px;
+}
+
+.hero img{
+    width: min(20%, 500px);
+    margin: 2rem;
+    height: fit-content;
+
+    background: var(--LIGHTRED);
+    background: radial-gradient(circle, var(--LIGHTRED) 0%, var(--MIDRED) 42%, var(--DARKRED) 100%);
+    
+    padding: 1%;
+    border: white 0.5rem solid;
+    outline: black 0.5rem solid;
+    border-radius: 50%;
+    box-shadow: 0.5rem 0.5rem 5px black;
+
+    overflow: visible;
+}
+
+.hero .speech{
+    width: min(70%, 900px);
     box-shadow: 5px 5px 5px black;
 }
-
-
 /*PROJECT STYLING*/
 
 #project-list{
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%;
 }
 
 .project-view{
@@ -204,6 +331,7 @@ header{
     padding: 1rem;
     border: black 5px solid;
     max-width: 68%;
+
 }
 
 .project-title{
@@ -216,6 +344,10 @@ header{
 .project-description{
     margin: 1rem;
     text-align: justify;
+}
+
+.project-description ul{
+    margin-left: 3rem;
 }
 
 .project-links{
@@ -233,9 +365,10 @@ header{
 }
 
 .project-link{
-    width: 200px;
-    height: 75px;
-    flex: 1 1 200px;
+    width: fit-content;
+    min-width: 10rem;
+    height: auto;
+    flex-shrink: 1 1 200px;
 
     align-items: center;
 
@@ -244,18 +377,27 @@ header{
     border-radius: 100px;
 }
 
+.project-link:hover{
+    background-color: gray;
+}
+
 .project-link a{
     margin: 5px;
 
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex: 1 1 200px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1 1 200px;
     gap: 0.5rem;
 
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
+
+.project-link a i{
+    font-size: 2rem;
 }
 
 
@@ -265,6 +407,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
     gap: 1rem;
 }
 
@@ -272,9 +415,9 @@ header{
     display: flex;
     flex-direction: column;
 
-    width: 30%;
+    width: 500px;
 
-    height: auto;
+    height: fit-content;
 
     padding: 1%;
 
@@ -282,6 +425,10 @@ header{
 
     box-shadow: 5px 5px 5px black;
     border: black 5px solid;
+}
+
+.video-container .image-container{
+    width: 100%;
 }
 
 .video-info{
@@ -295,11 +442,11 @@ header{
 }
 
 .video-title{
-    font-size: larger;
+    font-size: 2rem;
     font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .video-description{
-    font-size: large;
+    font-size: 1.5rem;
     text-align: justify;
 }

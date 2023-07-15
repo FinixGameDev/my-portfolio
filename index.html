@@ -5,8 +5,9 @@
     <meta name="author" content="Finix"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finix's Portfolio</title>
-    <link rel="icon" href="imgs/icon.jpg"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="../imgs/icon.jpg"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -15,20 +16,21 @@
       <nav aria-label="selector">
         <ul class="header-selector">
               <li class="header-item">
-                <a href="home.html">Home</a>
+                <a href="html/home.html">Home</a>
               </li>
-              <li class="header-item">
-                <a href="projects.html">Projects</a>
+              <!--<li class="header-item">
+                <a href="html/projects.html">Projects</a>
                 <ul class="header-dropdown">
-                  <li>Games</li>
-                  <li>Tools</li>
+                  <li>Academic</li>
+                  <li>Professional</li>
+                  <li>Personal</li>
                 </ul>
               </li>
               <li class="header-item">
-                <a href="videos.html">Videos</a>
-              </li>
+                <a href="html/videos.html">Videos</a>
+              </li>-->
               <li class="header-item">
-                <a href="about.html">About</a>
+                <a href="html/about.html">About</a>
               </li>
               <li class="header-item">
                 <a href="#end">Contact</a>
@@ -37,53 +39,22 @@
         </nav>
     </header>
 
-
+    <main></main>
 
     <footer id="end">
       <section id="footer-info">
-        <div class="footer-contact">
-          <h2>Contact Form</h2>
-            <form action="https://httpbin.org/get" method="get">
-                <fieldset>
-                    <p>
-                        <label for="name">Name</label>
-                        <input type="text" name="name"
-                        id="name" placeholder="John Doe"
-                        autocomplete="off" required>
-                    </p>
-                    <p>
-                        <label for="email">E-Mail</label>
-                        <input type="email" name="email"
-                        id="email" placeholder="johnDoe@email.com"
-                        autocomplete="off" required>
-                    </p>
-                    <p>
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject"
-                        id="subject" placeholder="Cool Subject"
-                        autocomplete="off" required>
-                    </p>
-                    <p>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type something..."></textarea>
-                    </p>
-                    <br>
-                    <button>Submit</button>
-                </fieldset>          
-              </form>
-          </div>
-
         <div class="footer-social">
-          <h2>Follow Me</h2>
-          <p>Here's my social media:</p>
-          <ul>
+          <h2>Contact Me</h2>
+          <p>Feel free to send me a message at <a href="mailto:finixmakesgames@gmail.com?Subject=HelloThere" target="_blank">finixmakesgames@gmail.com</a>. Alternatively I'm usually lurking around these sites:</p>
+          <ul class="footer-icons">
             <li>
-              <a href="https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA"><img src="" alt="youtube" width="100" height="100"></a>
+              <a href="https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA"><i class="fa-brands fa-youtube"></i></i></a>
             </li>
             <li>
-              <a href="https://github.com/FinixGameDev"><img src="" alt="github" width="100" height="100"></a>
+              <a href="https://github.com/FinixGameDev"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
-              <a href="https://twitter.com/FinixGameDev"><img src="" alt="twitter" width="100" height="100"></a>
+              <a href="https://twitter.com/FinixGameDev"><i class="fa-brands fa-twitter"></i></a>
             </li>
           </ul>
         </div>
