@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face {
     font-family: 'Newspaper-Cutout';
     src: url('../fonts/NewspaperCutoutWhiteOnBlac-Rg.ttf') format('truetype');
@@ -62,8 +62,8 @@ body{
     align-items: center;
 
     color: black;
-    font-family:'East Sea Dokdo', cursive;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 25px;
 
 
@@ -139,11 +139,7 @@ a:hover, a:focus{
 }
 
 .speech a{
-    background: black;
-    color: white;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    border-radius: 50%;
+    border-bottom: 1px black solid;
 }
 
 .speech a:hover, .speech a:focus{
@@ -239,6 +235,10 @@ footer h2{
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     font-size: larger;
+}
+
+footer a{
+    color: lightgray;
 }
 
 .footer-copyright{
@@ -369,7 +369,7 @@ footer h2{
     list-style: none;
     width: fit-content;
 
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: small;
 }
 
