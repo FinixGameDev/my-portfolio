@@ -425,7 +425,7 @@ footer a{
     display: flex;
     flex-direction: column;
 
-    width: 300px;
+    width: max(300px, 22vw);
 
     height: fit-content;
 
@@ -452,8 +452,9 @@ footer a{
 }
 
 .video-title{
-    font-size: max(2rem ,4vh);
+    font-size: max(2rem ,3vh);
     font-family: 'Newspaper-Cutout', Impact, 'Arial Narrow Bold', sans-serif;
+    white-space: nowrap;
 }
 
 .video-description{
