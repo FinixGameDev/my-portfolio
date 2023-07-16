@@ -1,33 +1,21 @@
-var main = document.querySelector('main')
+const home = document.getElementById('home');
+const about = document.getElementById('about');
+const buttons = document.getElementsByClassName('header-item');
 init();
 
 
 function init() {
-    if (main == null)
-        addHome();
-}
-
-function addHome() {
-    const body = document.querySelector('body');
-    const empty = document.createElement('main');
-
-    main = empty;
-    body.append(main);
+    about.style.display = "none";
+    buttons[1].addEventListener("click", switchToAbout)
+    buttons[0].addEventListener("click", switchToHome);
 }
 
 function switchToHome(){
-    if (document.getElementById('game') == null)
-        main.remove();
+    home.style.display = "grid";
+    about.style.display = "none";
 }
 
 function switchToAbout(){
-    const button = document.getElementsByClassName('header-item');
-
-    if (document.getElementById('about') == null){
-        main.remove();
-    }else {
-        const link = button[1].querySelector('a');
-    }
-
-
+    about.style.display = "grid";
+    home.style.display = "none";
 }

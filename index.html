@@ -16,7 +16,7 @@
       <nav aria-label="selector">
         <ul class="header-selector">
               <li class="header-item">
-                <a href="html/home.html">Home</a>
+                <a href="#home">Home</a>
               </li>
               <!--<li class="header-item">
                 <a href="html/projects.html">Projects</a>
@@ -30,7 +30,7 @@
                 <a href="html/videos.html">Videos</a>
               </li>-->
               <li class="header-item">
-                <a href="html/about.html">About</a>
+                <a href="#about">About</a>
               </li>
               <li class="header-item">
                 <a href="#end">Contact</a>
@@ -39,6 +39,352 @@
         </nav>
     </header>
 
+    <main  id="home">
+      <h1>Finix's Portfolio</h1>
+      <h2>He does games and stuff</h2>
+      <section class="hero">
+        <img src="../imgs/masks/basic.png" alt="hero_icon", width="100" height="100">
+        <span class="speech">
+          <p>
+              Hi! I'm Diogo Rocha aka Finix, and this is my portfolio. I'm a young game developer and game designer from Portugal and I recently graduated from
+              <a href="https://ipca.pt">IPCA</a> studying Digital Games Development & Engineering.
+          </p>
+          <p>
+              If you're here, chances are you have heard my story a thousand times: I started my gaming journey pretty much in diapers, playing <a href="https://www.youtube.com/shorts/GD5mzJ7UrhA">Max Payne</a> on my dad's laptop, I then
+              found my calling to game development at 14 when my middle school friends introduced me to the <a href="https://unity.com/">Unity Engine</a> and so I've been learning about game dev and loving the medium
+              ever since.
+          </p>
+          <p>
+              Anyways... here you can find some of the <a href="#game">games</a> and game development <a href="#tool">tools</a> I've developed on my own, and some of the projects I had the pleasure of having a team to work with.
+          </p>
+        </span>
+      </section>
+
+      <h2>Highlighted Project</h2>
+      <section id="game">
+        <div class="project-view">
+            <div class="image-container">
+              <img
+                src="../imgs/placeholder/highlighted-game-thumbnail.png"
+                alt="project thumbnail"
+                width="700"
+                height="393"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-info">
+              <span class="project-title"><p>Sam's Last Nightmare</p></span>
+              <span class="project-description"><p>
+                After a rescue operation gone bad Sam is left for dead in the middle of the street. 
+                Rescued by a man only known as The Doctor and without memories Sam now spends his nights trying to remember what happened in that damned operation. 
+                Each time remembering a different way.
+                </p>
+              </span>
+              <ul class="project-links">
+                <li class="project-link">
+                  <a class="youtube" href="https://www.youtube.com/watch?v=S0Y2AoS57lU">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>Trailer</p>
+                  </a>
+                </li>
+                <li class="project-link">
+                  <a class= "steam" href="https://store.steampowered.com/app/2272600/Sams_Last_Nightmare/">
+                    <i class="fa-brands fa-steam-symbol"></i>
+                    <p>Wishlist</p>
+                  </a>
+                </li>
+                <li class="project-link">
+                  <a class="itch" href="https://finixgamedev.itch.io/sams-last-nightmare">
+                    <i class="fa-brands fa-itch-io"></i>
+                    <p class="nowrap">Dev Build</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+      
+      <h2>Academic Projects</h2>
+      <section id="tool">
+
+        <section id="video-list">
+          <div class="video-container">
+              <div class="image-container">
+                  <img src="../imgs/placeholder/academic-thumbnail-bean.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+              </div>
+              <div class="video-info">
+                  <span class="video-title">Bean War</span>
+
+                  <span class="video-description"><p>
+                      A small on-line shooter prototype made in Unity with Proton for networking.
+                      The game features a procedural generated circular maze as a map where up to 16 players can shoot each other
+                      in a free-for-all. Missing features include, a non-working leader board and ammo count.
+                  </p></span>
+              </div>
+          </div>
+
+
+          <div class="video-container">
+              <div class="image-container">
+                  <img src="../imgs/placeholder/academic-thumbnail-lexi.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+              </div>
+              <div class="video-info">
+                  <span class="video-title">As Aventuras de Lexi - Prototype</span>
+
+                  <span class="video-description"><p>
+                      Made for a co-creation project with a multi-disciplinary team. As Aventuras de Lexi or
+                      Lexi's Adventures is an educational game design to help dislexic kids and children with other
+                      types of learning disabilities. I was responsible for the game design, level design, programming and writing
+                      as well of the original prototype which proceeded to gain some <a href="https://ipca.pt/noticia/antes-de-ler-este-texto-ligue-um-cronometro-ipca-apresenta-jogo-para-criancas-com-dislexia/">notoriety</a>.
+                  </p></span>
+              </div>
+          </div>
+          <div class="video-container">
+              <div class="image-container">
+                  <img src="../imgs/placeholder/academic-thumbnail-maze.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+              </div>
+              <div class="video-info">
+                  <span class="video-title">Maze Generator Tool</span>
+
+                  <span class="video-description"><p>
+                      A Unity dev tool designed for Sam's Last Nightmare to create procedural generated levels
+                      with a maze format. Based on the book Mazes for Programmers, this tool supports sidewinder, binary tree and
+                      recursive backtracker algorithms for the map data generation as well as two instatiation methods. For gameplay reasons
+                      it also supports modifiers that change tiles based on the game rules.
+                  </p></span>
+              </div>
+          </div>
+          <div class="video-container">
+              <div class="image-container">
+                  <img src="../imgs/placeholder/academic-thumbnail-escape.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+              </div>
+              <div class="video-info">
+                  <span class="video-title">Escape Rkhanspri</span>
+
+                  <span class="video-description"><p>
+                      A smal tech demo project made for a shaders unit, Escape Rkhanspri intends to create a PSX-Retro style 
+                      horror experience with a night vision shader, a pixelated shader, a noise shader that reacts when enemies are nearby
+                      and custom water shader with a dynamic transparency and vertex displacement.
+                  </p></span>
+              </div>
+          </div>
+          
+      </section>
+      </section>
+
+     
+
+      <h2>Personal Work</h2>
+
+      
+      <section id="video-list">
+
+        <a href="https://upfordebate.itch.io/thesniffer">
+          <div class="video-container">
+          <div class="image-container">
+              <img src="../imgs/placeholder/personal-thumbnail-sniffer.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+          </div>
+          <div class="video-info">
+              <span class="video-title">The Sniffer</span>
+
+              <span class="video-description"><p>
+                  My first ever game jam project. Made for <div class="nowrap">GameJam+ 2021</div> with the theme "Colors". The Sniffer is game about a paint sniffer
+                  that can go through walls as long as the paint they snif matches the wall color. I contributed mainly
+                  for the art, game design and level design for the game.
+
+                </p></span>
+          </div>
+        </div>
+        </a>
+
+
+        <a href="https://upfordebate.itch.io/love-darkness">
+        <div class="video-container">
+            <div class="image-container">
+                <img src="../imgs/placeholder/personal-thumbnail-led.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+            </div>
+            <div class="video-info">
+                <span class="video-title">Love & Darkness</span>
+
+                <span class="video-description"><p>
+                    Made for Retro Jam 2022 with the theme of conections, Love and Darkness features two entities that are tethered together and in oposition.
+                    When one dies the other revives and the player is tasked with turning on four lighthouses in order to unite these entities. I contributed with
+                    the game design, level design and ""art".
+                </p></span>
+            </div>
+        </div>
+
+      </a>
+
+      <a href="https://upfordebate.itch.io/run">
+        <div class="video-container">
+            <div class="image-container">
+                <img src="../imgs/placeholder/personal-thumbnail-run.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+            </div>
+            <div class="video-info">
+                <span class="video-title">RUN</span>
+
+                <span class="video-description"><p>
+                    Made for GMTK 2023 with the theme of roles reversed, RUN is about your run of the mill horror game mob, going about their life spooking players, until,
+                    a speedrunner on a genocide 100% run comes in. As such you need to run away from the speedrunner. This project was my first venture in Godot and is very much
+                    rudementary, featuring simple tank controls and a chase AI in a simple square. I contributed with the gameplay controls, AI and Menus.
+                </p></span>
+            </div>
+        </div>      
+      </a>
+      <a href="https://github.com/FinixGameDev/my-portfolio">
+        <div class="video-container">
+          <div class="image-container">
+              <img src="../imgs/placeholder/personal-portfolio-thumbnail.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
+          </div>
+          <div class="video-info">
+              <span class="video-title">this.Portfolio</span>
+
+              <span class="video-description"><p>
+                  This entire portfolio is also a personal pet project of mine as a way for me to learn web development.
+                  It's a ever evolving site with features I intend to add to flex my skills and it's all coded au naturel
+                   with html, css and javascript.
+              </p></span>
+          </div>
+      </div>
+    </a>
+        
+    </section>
+      
+     
+  </main>
+
+  <main id="about">
+    <section class="about">
+      <section class="about-experience">
+        <h2>Work Experience</h2>
+        <ul class="about-timeline">
+          <li class="about-entry right">
+            <div class="about-content">
+              <span class="title"><h2>UI Minigame Developer - FUJITSU</h2></span>
+              <span class="date"><h3>February 2022 - June 2022</h3></span>
+              <ul class="task-list">
+                <b>Tasks:</b>
+                <li>
+                  Design and Development of minigames using only Unity UI.
+                </li>
+                <li>
+                  Integration of said minigames in the main game workflow.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        
+      </section>
+  
+      <section class="about-education">
+        <h2>Education</h2>
+        <ul class="about-timeline">
+          <li class="about-entry left">
+            <div class="about-content">
+              <span class="title"><h2>Bachelor - Digital Games Development Engineering</h2></span>
+              <span class="date"><h3>September 2019 - June 2023</h3></span>
+              <span class="description">Polytechnic Institute of Cávado and Ave, Barcelos</span>
+            </div>
+          </li>
+          
+        </ul>
+        
+      </section>
+  
+      <h2>Skills</h2>
+      <section class="about-skills">
+        <h3>Engines / Frameworks</h3>
+        <ul class="skill-list">
+          <li>
+            Unity
+          </li>
+          <li>
+            Godot
+          </li>
+          <li>
+            Unreal 5
+          </li>
+          <li>
+            Monogame / MicrosoftXNA
+          </li>
+        </ul>
+        <h3>Programming Languages</h3>
+        <ul class="skill-list">
+          <li>
+            C#
+          </li>
+          <li>
+            C++
+          </li>
+          <li>
+            C
+          </li>
+          <li>
+            GDScript
+          </li>
+          <li>
+            Python
+          </li>
+          <li>
+            HLSL
+          </li>
+          <li>
+            Swift
+          </li>
+          <li>
+            Kotlin
+          </li>
+          <li>
+            HTML/CSS
+          </li>
+          <li>
+            JavaScript
+          </li>
+        </ul>
+  
+        <h3>Tools</h3>
+        <ul class="skill-list">
+          <li>
+            Adobe Photoshop/Gimp
+          </li>
+          <li>
+            Adobe Premier/Sony Vegas/DaVinci Resolve
+          </li>
+          <li>
+            Audacity
+          </li>
+          <li>
+            Unity Photon
+          </li>
+          <li>
+            Blender
+          </li>
+          <li>
+            Substance Painter
+          </li>
+        </ul>
+      </section>
+  
+      <section class="about-languages">
+        <h2>Languages</h2>
+        <div class="about-content">
+          <span class="title"><h3>English</h3></span>
+          <span class="description"><p>Advanced level</p></span>
+        </div>
+        <div class="about-content">
+          <span class="title"><h3>Portuguese</h3></span>
+          <span class="description"><p>Fluent, native tongue</p></span>
+        </div>
+        <div class="about-content">
+          <span class="title"><h3>Spanish</h3></span>
+          <span class="description"><p>Medium/Low level</p></span>
+        </div>
+      </section>
+    </section>
+    
+  </main>
 
     <footer id="end">
       <section id="footer-info">
