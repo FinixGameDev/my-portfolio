@@ -1,406 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="author" content="Finix"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finix's Portfolio</title>
-    <link rel="icon" href="imgs/icon.jpg"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
 
-  <body>
-    <!--Main Selector-->
-    <header>
-      <nav aria-label="selector">
-        <ul class="header-selector">
-              <li class="header-item">
-                <a href="#home">Home</a>
-              </li>
-              <!--<li class="header-item">
-                <a href="html/projects.html">Projects</a>
-                <ul class="header-dropdown">
-                  <li>Academic</li>
-                  <li>Professional</li>
-                  <li>Personal</li>
-                </ul>
-              </li>
-              <li class="header-item">
-                <a href="html/videos.html">Videos</a>
-              </li>-->
-              <li class="header-item">
-                <a href="#about">About</a>
-              </li>
-              <li class="header-item">
-                <a href="#end">Contact</a>
-              </li>
-        </ul> 
-        </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <main  id="home">
-      <h1>Finix's Portfolio</h1>
-      <h2>He does games and stuff</h2>
-      <section class="hero">
-        <img src="imgs/masks/basic.png" alt="hero_icon", width="100" height="100">
-        <span class="speech">
-          <p>
-              Hi! I'm Diogo Rocha aka Finix, and this is my portfolio. I'm a young game developer and game designer from Portugal and I recently graduated from
-              <a href="https://ipca.pt">IPCA</a> studying Digital Games Development & Engineering.
-          </p>
-          <p>
-              Here you can find some of the <a href="#game">games</a> and game development <a href="#tool">tools</a> I've developed on my own, and some of the projects I had the pleasure of having a team to work with.
-          </p>
-        </span>
-      </section>
+  <title>Finix's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-      <h2>Highlighted Project</h2>
-      <section id="game">
-        <div class="project-view">
-            <div class="image-container">
-              <img
-                src="imgs/placeholder/highlighted-game-thumbnail.png"
-                alt="project thumbnail"
-                width="700"
-                height="393"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-info">
-              <span class="project-title"><p>Sam's Last Nightmare</p></span>
-              <span class="project-description"><p>
-                After a rescue operation gone bad Sam is left for dead in the middle of the street. 
-                Rescued by a man only known as The Doctor and without memories Sam now spends his nights trying to remember what happened in that damned operation. 
-                Each time remembering a different way.
-                </p>
-              </span>
-              <ul class="project-links">
-                <li class="project-link">
-                  <a class="youtube" href="https://www.youtube.com/watch?v=S0Y2AoS57lU">
-                    <i class="fa-brands fa-youtube"></i>
-                    <p>Trailer</p>
-                  </a>
-                </li>
-                <li class="project-link">
-                  <a class= "steam" href="https://store.steampowered.com/app/2272600/Sams_Last_Nightmare/">
-                    <i class="fa-brands fa-steam-symbol"></i>
-                    <p>Wishlist</p>
-                  </a>
-                </li>
-                <li class="project-link">
-                  <a class="itch" href="https://finixgamedev.itch.io/sams-last-nightmare">
-                    <i class="fa-brands fa-itch-io"></i>
-                    <p class="nowrap">Dev Build</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-      </section>
-      
-      <h2>Academic Projects</h2>
-      <section id="tool">
+  <!-- Favicons -->
+  <link href="imgs/iconcircle.png" rel="icon">
+  <link href="imgs/iconcircle.png" rel="apple-touch-icon">
 
-        <section id="video-list">
-          <div class="video-container">
-              <div class="image-container">
-                  <img src="imgs/placeholder/academic-thumbnail-bean.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-              </div>
-              <div class="video-info">
-                  <span class="video-title">Bean War</span>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-                  <span class="video-description"><p>
-                      A small on-line shooter prototype made in Unity with Proton for networking.
-                      The game features a procedural generated circular maze as a map where up to 16 players can shoot each other
-                      in a free-for-all. Missing features include, a non-working leader board and ammo count.
-                  </p></span>
-              </div>
-          </div>
+  <!-- Template Main CSS File -->
+  <link href="sass/main.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-          <div class="video-container">
-              <div class="image-container">
-                  <img src="imgs/placeholder/academic-thumbnail-lexi.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-              </div>
-              <div class="video-info">
-                  <span class="video-title">As Aventuras de Lexi</span>
+<body>
 
-                  <span class="video-description"><p>
-                      Made for a co-creation project with a multi-disciplinary team. As Aventuras de Lexi or
-                      Lexi's Adventures is an educational game design to help dislexic kids and children with other
-                      types of learning disabilities. I was responsible for the game design, level design, programming and writing
-                      as well of the original prototype which proceeded to gain some <a href="https://ipca.pt/noticia/antes-de-ler-este-texto-ligue-um-cronometro-ipca-apresenta-jogo-para-criancas-com-dislexia/">notoriety</a>.
-                  </p></span>
-              </div>
-          </div>
-          <div class="video-container">
-              <div class="image-container">
-                  <img src="imgs/placeholder/academic-thumbnail-maze.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-              </div>
-              <div class="video-info">
-                  <span class="video-title">Maze Generator Tool</span>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
 
-                  <span class="video-description"><p>
-                      A Unity dev tool designed for Sam's Last Nightmare to create procedural generated levels
-                      with a maze format. Based on the book Mazes for Programmers, this tool supports sidewinder, binary tree and
-                      recursive backtracker algorithms for the map data generation as well as two instatiation methods. For gameplay reasons
-                      it also supports modifiers that change tiles based on the game rules.
-                  </p></span>
-              </div>
-          </div>
-          <div class="video-container">
-              <div class="image-container">
-                  <img src="imgs/placeholder/academic-thumbnail-escape.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-              </div>
-              <div class="video-info">
-                  <span class="video-title">Escape Rkhanspri</span>
+      <h1 class="logo"><a href="index.html">Finix's Portfolio</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                  <span class="video-description"><p>
-                      A smal tech demo project made for a shaders unit, Escape Rkhanspri intends to create a PSX-Retro style 
-                      horror experience with a night vision shader, a pixelated shader, a noise shader that reacts when enemies are nearby
-                      and custom water shader with a dynamic transparency and vertex displacement.
-                  </p></span>
-              </div>
-          </div>
-          
-      </section>
-      </section>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto " href="#work">Portfolio</a></li>
+          <!--<li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> TO DO-->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-     
+    </div>
+  </header><!-- End Header -->
 
-      <h2>Personal Work</h2>
-
-      
-      <section id="video-list">
-
-        <a href="https://upfordebate.itch.io/thesniffer">
-          <div class="video-container">
-          <div class="image-container">
-              <img src="imgs/placeholder/personal-thumbnail-sniffer.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-          </div>
-          <div class="video-info">
-              <span class="video-title">The Sniffer</span>
-
-              <span class="video-description"><p>
-                  My first ever game jam project. Made for <div class="nowrap">GameJam+ 2021</div> with the theme "Colors".
-
-                </p></span>
-          </div>
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-primary">
+    <video width="1280" height="720" autoplay muted>
+      <source src="assets/highlightedProject.mp4" type="video/mp4">
+    </video>
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">Finix</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Game Developer"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
-        </a>
-
-
-        <a href="https://upfordebate.itch.io/love-darkness">
-        <div class="video-container">
-            <div class="image-container">
-                <img src="imgs/placeholder/personal-thumbnail-led.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-            </div>
-            <div class="video-info">
-                <span class="video-title">Love & Darkness</span>
-
-                <span class="video-description"><p>
-                    Made for Retro Jam 2022 with the theme of conections.
-                </p></span>
-            </div>
-        </div>
-
-      </a>
-
-      <a href="https://upfordebate.itch.io/run">
-        <div class="video-container">
-            <div class="image-container">
-                <img src="imgs/placeholder/personal-thumbnail-run.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-            </div>
-            <div class="video-info">
-                <span class="video-title">RUN</span>
-
-                <span class="video-description"><p>
-                    Made for GMTK 2023 with the theme of roles reversed.
-                </p></span>
-            </div>
-        </div>      
-      </a>
-      <a href="https://github.com/FinixGameDev/my-portfolio">
-        <div class="video-container">
-          <div class="image-container">
-              <img src="imgs/placeholder/personal-portfolio-thumbnail.png" alt="video-thumbnail", width="1280", height="720", loading="lazy">
-          </div>
-          <div class="video-info">
-              <span class="video-title">this.Portfolio</span>
-
-              <span class="video-description"><p>
-                  This entire portfolio is also a personal pet project of mine as a way for me to learn web development.
-                  It's a ever evolving site with features I intend to add to flex my skills and it's all coded au naturel
-                   with html, css and javascript.
-              </p></span>
-          </div>
       </div>
-    </a>
-        
-    </section>
-      
-     
-  </main>
+    </div>
+  </div><!-- End Hero Section -->
 
-  <main id="about">
-    <section class="about">
-      <section class="about-experience">
-        <h2>Work Experience</h2>
-        <ul class="about-timeline">
-          <li class="about-entry right">
-            <div class="about-content">
-              <span class="title"><h2>UI Minigame Developer - FUJITSU</h2></span>
-              <span class="date"><h3>February 2022 - June 2022</h3></span>
-              <ul class="task-list">
-                <b>Tasks:</b>
-                <li>
-                  Design and Development of minigames using only Unity UI.
-                </li>
-                <li>
-                  Integration of said minigames in the main game workflow.
-                </li>
-              </ul>
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="imgs/iconcircle.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Finix</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Game Developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>finixmakesgames@gmail.com</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>Unity</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>C#</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Unreal</span> <span class="pull-right">20%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Godot</span> <span class="pull-right">45%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Hi! I'm Diogo Rocha aka Finix, and this is my portfolio. I'm a young Game Developer and Game Designer from Portugal and I recently graduated from
+                      <a href="https://ipca.pt">IPCA</a> studying Digital Games Development & Engineering.
+                    </p>
+                    <p class="lead">
+                      Having started my game dev journey almost 10 years ago when I was 14, toying around with Unity 4, I have developed good critical thinking around game design 
+                      and miscellaneous skills around 3D moddelling, programming and narritive writing.
+                    </p>
+                    <p class="lead">
+                      Here you can find some of the games and game development tools I've developed on my own, and some of the projects I had the pleasure of having a team to work with.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-        
-      </section>
-  
-      <section class="about-education">
-        <h2>Education</h2>
-        <ul class="about-timeline">
-          <li class="about-entry left">
-            <div class="about-content">
-              <span class="title"><h2>Bachelor - Digital Games Development Engineering</h2></span>
-              <span class="date"><h3>September 2019 - June 2023</h3></span>
-              <span class="description">Polytechnic Institute of Cávado and Ave, Barcelos</span>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                A collection of my academic and hobbyist projects.
+              </p>
+              <div class="line-mf"></div>
             </div>
-          </li>
-          
-        </ul>
-        
-      </section>
-  
-      <h2>Skills</h2>
-      <section class="about-skills">
-        <h3>Engines / Frameworks</h3>
-        <ul class="skill-list">
-          <li>
-            Unity
-          </li>
-          <li>
-            Godot
-          </li>
-          <li>
-            Unreal 5
-          </li>
-          <li>
-            Monogame / MicrosoftXNA
-          </li>
-        </ul>
-        <h3>Programming Languages</h3>
-        <ul class="skill-list">
-          <li>
-            C#
-          </li>
-          <li>
-            C++
-          </li>
-          <li>
-            C
-          </li>
-          <li>
-            GDScript
-          </li>
-          <li>
-            Python
-          </li>
-          <li>
-            HLSL
-          </li>
-          <li>
-            Swift
-          </li>
-          <li>
-            Kotlin
-          </li>
-          <li>
-            HTML/CSS
-          </li>
-          <li>
-            JavaScript
-          </li>
-        </ul>
-  
-        <h3>Tools</h3>
-        <ul class="skill-list">
-          <li>
-            Adobe Photoshop/Gimp
-          </li>
-          <li>
-            Adobe Premier/Sony Vegas/DaVinci Resolve
-          </li>
-          <li>
-            Audacity
-          </li>
-          <li>
-            Unity Photon
-          </li>
-          <li>
-            Blender
-          </li>
-          <li>
-            Substance Painter
-          </li>
-        </ul>
-      </section>
-  
-      <section class="about-languages">
-        <h2>Languages</h2>
-        <div class="about-content">
-          <span class="title"><h3>English</h3></span>
-          <span class="description"><p>Advanced level</p></span>
+          </div>
         </div>
-        <div class="about-content">
-          <span class="title"><h3>Portuguese</h3></span>
-          <span class="description"><p>Fluent, native tongue</p></span>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="imgs/placeholder/highlighted-game-thumbnail.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="imgs/placeholder/highlighted-game-thumbnail.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Sam's Last Nightmare</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Hobby Project</span> / <span class="w-date">Coming Soon</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href=""> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="imgs/placeholder/academic-thumbnail-maze.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="imgs/placeholder/academic-thumbnail-maze.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Maze Generator</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Tools</span> / <span class="w-date">27 Sep. 2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href=""> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="imgs/placeholder/academic-thumbnail-lexi.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="imgs/placeholder/academic-thumbnail-lexi.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Lexi's Adventure</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Academic Project</span> / <span class="w-date">8 Jun. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href=""> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="imgs/placeholder/academic-thumbnail-escape.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="imgs/placeholder/academic-thumbnail-escape.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Escape Rkanspri</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Academic Project</span> / <span class="w-date">13 Jun. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href=""> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="imgs/placeholder/academic-thumbnail-bean.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="imgs/placeholder/academic-thumbnail-bean.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bean War</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Academic Project</span> / <span class="w-date">10 Feb. 2021</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href=""> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="imgs/placeholder/personal-thumbnail-sniffer.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="imgs/placeholder/personal-thumbnail-sniffer.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">UpForDebate</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Game Jams</span> / <span class="w-date">21 Nov. 2021</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href=""> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="about-content">
-          <span class="title"><h3>Spanish</h3></span>
-          <span class="description"><p>Medium/Low level</p></span>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Blog Section  WIP =======
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
         </div>
-      </section>
-    </section>
-    
-  </main>
-
-    <footer id="end">
-      <section id="footer-info">
-        <div class="footer-social">
-          <h2>Contact Me</h2>
-          <p>Feel free to send me a message at <a href="mailto:finixmakesgames@gmail.com?Subject=HelloThere" target="_blank">finixmakesgames@gmail.com</a>. Alternatively I'm usually lurking around these sites:</p>
-          <ul class="footer-icons">
-            <li>
-              <a href="https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA"><i class="fa-brands fa-youtube"></i></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/FinixGameDev"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/FinixGameDev"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/diogo-rocha-376b7a227/"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <p class="card-description">
+                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                  a pellentesque nec,
+                  egestas non nisi.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Morgan Freeman</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> 10 min
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section> End Blog Section -->
 
-      <p class="footer-copyright">&copy; 2023 Finix</p>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <!--<div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>-->
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Contact me on my social media or feel free to send me an e-mail at:
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-envelope"></span> <a href="mailto:finixmakesgames@gmail.com">finixmakesgames@gmail.com</a></li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA"><span class="ico-circle"><i class="bi bi-youtube"></i></span></a></li>
+                        <li><a href="https://twitter.com/FinixGameDev"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/diogo-rocha-376b7a227/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/FinixGameDev"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
 
-    </footer>
+  </main><!-- End #main -->
 
-    <script src="app.js"></script>
-  </body>
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
