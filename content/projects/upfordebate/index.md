@@ -1,6 +1,7 @@
 ---
 title: "UpForDebate"
 date: 2021-11-21
+draft: true
 description: "Game jam entries released under the UpForDebate itch.io page."
 categories: ["Game Jam"]
 ---

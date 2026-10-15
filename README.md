@@ -1,5 +1,7 @@
 # Finix: Game Dev Blog & Portfolio
 
+"I hate that this is vibe coded and I hate it more for working..." - Finix 2026
+
 Hugo + [Blowfish](https://blowfish.page/). Posts are Markdown files.
 (Tested with Hugo extended 0.167.0. Current Blowfish needs Hugo ≥ 0.164.)
 
