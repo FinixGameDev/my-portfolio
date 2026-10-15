@@ -1,0 +1,29 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Finix | Game Dev Blog & Portfolio"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Game development projects, devlogs and tutorials by Diogo Rocha (Finix)."
+  copyright = "© Diogo Rocha (Finix)"
+
+  [params.author]
+    name = "Diogo Rocha (Finix)"
+    email = "finixmakesgames@gmail.com"
+    image = "img/iconcircle.png"
+    imageQuality = 96
+    headline = "Game Developer & Game Designer from Portugal"
+    bio = "Making games since Unity 4, writing about it since now. Projects, devlogs, tutorials and the occasional ramble."
+    links = [
+      { email = "mailto:finixmakesgames@gmail.com" },
+      { itch-io = "https://finixgamedev.itch.io" },
+      { github = "https://github.com/FinixGameDev" },
+      { linkedin = "https://www.linkedin.com/in/diogo-rocha-376b7a227/" },
+      { twitter = "https://twitter.com/FinixGameDev" },
+      { youtube = "https://www.youtube.com/channel/UCakkKmjcui8PI98XIQ1X9iA" },
+    ]

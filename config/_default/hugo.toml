@@ -1,0 +1,34 @@
+# -- Site Configuration --
+theme = "blowfish"
+
+# Using the existing repo as a project page. If you rename the repo to
+# "finixgamedev.github.io" (recommended for a blog), change this to
+# "https://finixgamedev.github.io/".
+baseURL = "https://finixgamedev.github.io/my-portfolio/"
+
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+summaryLength = 0
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+
+[pagination]
+  pagerSize = 12
+
+[imaging]
+  anchor = "Center"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# JSON output powers the built-in search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
